@@ -5,6 +5,14 @@
   "author": "reprayer",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reprayer/poi-plugin-local-battle-replay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reprayer/poi-plugin-local-battle-replay/issues"
+  },
+  "homepage": "https://github.com/reprayer/poi-plugin-local-battle-replay#readme",
   "keywords": [
     "poi-plugin",
     "kancolle",

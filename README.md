@@ -1,6 +1,7 @@
 # poi 本地战斗回放
 
-用于 [poi](https://github.com/poooi/poi) 的舰队 Collection 战斗回放插件
+用于 [poi](https://github.com/poooi/poi) 的舰队 Collection 战斗回放插件；
+
 简约线条，极致奠感
 
 ## 介绍
