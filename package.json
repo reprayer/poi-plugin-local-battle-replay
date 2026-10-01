@@ -1,14 +1,14 @@
 {
   "name": "poi-plugin-local-battle-replay",
   "version": "1.0.0",
-  "description": "Local-only minimalist KanColle battle replay for poi",
+  "description": "Local minimalist KanColle battle replay for poi",
+  "author": "reprayer",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
     "poi-plugin",
     "kancolle",
-    "battle-replay",
-    "offline"
+    "battle-replay"
   ],
   "publishConfig": {
     "access": "public"
@@ -25,23 +25,15 @@
     "styles/",
     "standalone/",
     "examples/",
-    "scripts/",
-    "tests/",
     "README.md",
-    "RELEASE.md",
     "REFERENCES.md",
-    "SECURITY.md",
     "LICENSE"
   ],
-  "peerDependencies": {
-    "react": ">=18",
-    "react-redux": ">=7"
-  },
   "poiPlugin": {
     "title": "本地战斗回放",
-    "description": "白底黑字的战斗流程播放器",
+    "description": "极简线条版战斗流程播放器",
     "icon": "fa/play-circle",
     "priority": 2,
-    "earliestCompatibleMain": "10.0.0"
+    "earliestCompatibleMain": "11.1.0"
   }
 }
