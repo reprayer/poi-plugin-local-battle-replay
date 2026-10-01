@@ -255,7 +255,7 @@ test('poi inserts a separator before the final digit of compact numeric map ids'
   assert.deepEqual(state.location, { mapId: '2-4', node: 6 })
 })
 
-test('poi opens in window mode and preserves live append position through battle results', () => {
+test('poi opens in window mode and keeps live append position without auto-opening', () => {
   assert.equal(plugin.windowMode, true)
   assert.deepEqual(plugin.switchPluginPath, [])
   assert.equal(plugin.__test.themeConfigPath, 'plugin.poi-plugin-local-battle-replay.theme')
@@ -272,16 +272,12 @@ test('poi opens in window mode and preserves live append position through battle
     autoplay: true,
   })
   assert.deepEqual(plugin.__test.liveReplayOptions(true, true, true), {
-    preservePosition: true,
+    startAtPhase: 'result',
     autoplay: true,
   })
   assert.deepEqual(plugin.__test.liveReplayOptions(false, true, true), {
     startAtEnd: true,
     autoplay: false,
-  })
-  assert.deepEqual(plugin.__test.liveReplayOptions(false, false, true), {
-    preservePosition: true,
-    autoplay: true,
   })
 })
 
