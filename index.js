@@ -393,12 +393,7 @@ function createModeShell(host) {
   }
 }
 
-function liveReplayOptions(hasLoadedReplay, replayExistedWhenOpened, hasResult) {
-  if (hasResult) {
-    return hasLoadedReplay
-      ? { startAtPhase: 'result', autoplay: true }
-      : { startAtEnd: true, autoplay: false }
-  }
+function liveReplayOptions(hasLoadedReplay, replayExistedWhenOpened) {
   if (!hasLoadedReplay && replayExistedWhenOpened) {
     return { startAtEnd: true, autoplay: false }
   }
@@ -426,7 +421,6 @@ function LocalBattleReplay() {
       const options = liveReplayOptions(
         hasLoadedReplayRef.current,
         replayExistedWhenOpenedRef.current,
-        Boolean(pluginState.replay.result),
       )
       shellRef.current.liveApp.setReplay(pluginState.replay, options)
       hasLoadedReplayRef.current = true
